@@ -32,8 +32,12 @@ body {
 }
 
 .navbar-mobile{
-  display: none;
+  transition: 0.3s ease-in-out;
   width: 100%;
+  height: 0;
+  opacity: 0;
+  visibility: hidden;
+  background: #fff;
 }
 
 .navbar-menu li a {
@@ -50,12 +54,7 @@ body {
   padding: 3px 7px;
   border-radius: 6px;
 }
-.menu-toggle div{
-  height: 5px ;
-  width: 30px;
-  background-color: black;
 
-}
 
 
 h1 {
@@ -124,7 +123,9 @@ h1 {
     display: block;
   }
   .mobile-toogle{
-    display: block;
+    height: 150px;
+    opacity: 1;
+    visibility: visible;
   }
   .color-menu{
      border: 2px solid #DCDCDC;
